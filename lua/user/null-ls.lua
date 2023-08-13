@@ -26,18 +26,19 @@ function M.config()
     debug = false,
     diagnostics_format = "[#{s}] #{m}",
     sources = {
-      -- formatting.prettier.with {
-      --  extra_filetypes = { "toml" },
-      -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
-      --},
-      -- formatting.black.with { extra_args = { "--fast" } },
+      formatting.prettier.with {
+        extra_filetypes = { "toml" },
+        extra_args = { "--no-semi", "--jsx-single-quote" },
+      },
+      -- formatting.blue,
       -- formatting.google_java_format,
       formatting.stylua,
       formatting.gofumpt,
+      formatting.pylint,
       formatting.goimports,
       -- formatting.golines,
 
-      diagnostics.flake8,
+      -- diagnostics.flake8,
       diagnostics.golangci_lint,
     },
   }

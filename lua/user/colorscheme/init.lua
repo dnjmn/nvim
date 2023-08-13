@@ -1,2 +1,3 @@
-local v = require("user.colorscheme.tokyonight")
-return v
+require "user.colorscheme.nightfly"
+require "user.colorscheme.gruvbox"
+return require "user.colorscheme.tokyonight"
