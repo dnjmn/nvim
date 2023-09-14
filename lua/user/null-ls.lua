@@ -26,10 +26,7 @@ function M.config()
     debug = false,
     diagnostics_format = "[#{s}] #{m}",
     sources = {
-      formatting.prettier.with {
-        extra_filetypes = { "toml" },
-        extra_args = { "--no-semi", "--jsx-single-quote" },
-      },
+      formatting.prettier,
       -- formatting.blue,
       -- formatting.google_java_format,
       formatting.stylua,
@@ -38,7 +35,7 @@ function M.config()
       formatting.goimports,
       -- formatting.golines,
 
-      -- diagnostics.flake8,
+      diagnostics.flake8,
       diagnostics.golangci_lint,
     },
   }

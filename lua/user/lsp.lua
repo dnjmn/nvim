@@ -57,9 +57,7 @@ function M.config()
   end
 
   local on_attach = function(client, bufnr)
-    -- Add the following code to your init.lua or init.nvim file
-
-    local serve = { "tsserver", "sumneko_lua", "gopls", "pyright" }
+    local serve = { "tsserver", "sumneko_lua", "gopls", "pyright", "yamlls" }
     for _, s in ipairs(serve) do
       if client.name == s then
         client.server_capabilities.documentFormattingProvider = false
