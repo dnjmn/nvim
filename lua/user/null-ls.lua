@@ -30,13 +30,14 @@ function M.config()
       -- formatting.blue,
       -- formatting.google_java_format,
       formatting.stylua,
-      formatting.gofumpt,
+      -- formatting.gofumpt,
+      formatting.gofmt,
       formatting.pylint,
-      formatting.goimports,
+      -- formatting.goimports,
       -- formatting.golines,
 
       diagnostics.flake8,
-      diagnostics.golangci_lint,
+      -- diagnostics.golangci_lint,
     },
   }
 end
