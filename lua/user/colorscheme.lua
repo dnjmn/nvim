@@ -18,9 +18,10 @@ local M = {
 
 function M.config()
 	-- Example config in Lua
-	-- vim.g.gruvbox_baby_keyword_style = "italic"
-	-- vim.g.gruvbox_baby_background_color = "dark"
-	-- vim.g.gruvbox_baby_use_original_palette = true
+	vim.g.gruvbox_baby_background_color = "dark"
+	vim.g.everforest_better_performance = 1
+	vim.g.everforest_background = "hard"
+	vim.g.gruvbox_baby_transparent_mode = true
 
 	-- To disable highlights for supported plugin(s), call the `with_config` function **before** setting the colorscheme.
 	-- These are the defaults.
@@ -36,7 +37,7 @@ function M.config()
 	if vim.env.MACOS_THEME_MODE == "dark" then
 		vim.cmd('colorscheme tokyonight-night')
 	else
-		vim.cmd('colorscheme tokyonight-moon')
+		vim.cmd('colorscheme gruvbox-baby')
 	end
 
 	-- You can get the base16 colors **after** setting the colorscheme by name (base01, base02, etc.)
